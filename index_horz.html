@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Unbenanntes Dokument</title>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/velocity.min.js"></script>
+	<script type="text/javascript" src="js/velocity.ui.min.js"></script>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	
+	<style>
+		body{
+			margin:0;
+			padding:0;
+			overflow:hidden;
+			background:#ffffff;
+		}
+		
+		.switch {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+		}
+
+		.switch_box {
+			position:absolute;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			text-align:center;
+		}
+
+		.switch_box > img {
+			width:90%;
+			margin:70px auto 0 auto;
+		}
+
+		#switch_01{
+			z-index:1;	
+		}
+		#switch_02{
+			z-index:2;	
+		}
+		#switch_03{
+			z-index:3;	
+		}
+		#switch_04{
+			z-index:4;	
+		}
+		
+		.nav .right {
+			position: absolute;
+			right:30px;
+			top:43%;
+			color: #000;
+			z-index: 100;
+			font-size:150px;
+			cursor: pointer;
+			transform: translateZ(0);
+		}
+		
+		.nav .left {
+			position: absolute;
+			left:30px;
+			top:43%;
+			color: #000;
+			z-index: 100;
+			font-size:150px;
+			cursor: pointer;
+			transform: translateZ(0);
+		}
+		
+		.demo {
+			position: absolute;
+			z-index: 101;
+			display: inline-block;			
+			top:18px;
+			left:50%;
+			transform: translateX(-50%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="demo">
+		<a class="btn btn-default" href="index.html">Mixed</a> <a class="btn btn-default" href="index_vert.html">Vertical</a> <a class="btn btn-info" href="index_horz.html">Horizontal</a>
+	</div>
+	
+	<div class="nav">
+		<i class="fa fa-angle-right right"></i>
+		<i class="fa fa-angle-left left"></i>
+	</div>
+	
+    <div id="switch_01" class="switch">
+    	<div class="switch_box" data-posx="1" data-posy="1">
+        	<img src="img/01_1.jpg" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="2" data-posy="1">
+        	<img src="img/02_1.jpg" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="3" data-posy="1">
+        	<img src="img/01_1.jpg" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="4" data-posy="1">
+        	<img src="img/02_1.jpg" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="5" data-posy="1">
+        	<img src="img/01_1.jpg" border="0" />
+        </div>
+    </div>
+    
+    <div id="switch_02" class="switch">
+    	<div class="switch_box" data-posx="1" data-posy="1">
+        	<img src="img/01_2.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="2" data-posy="1">
+        	<img src="img/02_2.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="3" data-posy="1">
+        	<img src="img/01_2.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="4" data-posy="1">
+        	<img src="img/02_2.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="5" data-posy="1">
+        	<img src="img/01_2.png" border="0" />
+        </div>
+    </div>
+    
+    <div id="switch_03" class="switch">
+    	<div class="switch_box" data-posx="1" data-posy="1">
+        	<img src="img/01_3.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="2" data-posy="1">
+        	<img src="img/02_3.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="3" data-posy="1">
+        	<img src="img/01_3.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="4" data-posy="1">
+        	<img src="img/02_3.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="5" data-posy="1">
+        	<img src="img/01_3.png" border="0" />
+        </div>
+    </div>
+    
+    <div id="switch_04" class="switch">
+    	<div class="switch_box" data-posx="1" data-posy="1">
+        	<img src="img/01_4.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="1" data-posy="2">
+        	<img src="img/02_4.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="2" data-posy="2">
+        	<img src="img/01_4.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="2" data-posy="3">
+        	<img src="img/02_4.png" border="0" />
+        </div>
+        
+        <div class="switch_box" data-posx="3" data-posy="3">
+        	<img src="img/01_4.png" border="0" />
+        </div>
+    </div>
+    
+    <script>
+	var act_img = 1;
+	var act_img_max = $(".switch > .switch_box").length;
+	var resizer_timeout;
+	
+	//Navigation
+	function navigation(){
+		//after the last image start with the first ;)
+		if(act_img>act_img_max) act_img = 1;
+		if(act_img<1) act_img = act_img_max;
+		
+		//get the position of the next slide
+		var next_top = parseInt($('.switch > .switch_box:eq('+(act_img-1)+')').css("top"));
+		var next_left = parseInt($('.switch > .switch_box:eq('+(act_img-1)+')').css("left"));
+
+		//animate
+		$('#switch_01').velocity("stop").velocity ({
+			translateY: (next_top*-1),
+			translateX: (next_left*-1),
+			translateZ: 0
+		}, 800);
+		
+		$('#switch_02').velocity("stop").velocity ({
+			translateY: (next_top*-1),
+			translateX: (next_left*-1),
+			translateZ: 0
+		}, 1000);
+		
+		$('#switch_04').velocity("stop").velocity ({
+			translateY: (next_top*-1),
+			translateX: (next_left*-1),
+			translateZ: 0
+		}, 1500);
+		
+		$('#switch_03').velocity("stop").velocity ({
+			translateY: (next_top*-1),
+			translateX: (next_left*-1),
+			translateZ: 0
+		}, 2000);
+	}
+	
+	
+	//trigger the slide
+	$('.nav .right').click(function() {
+		act_img++;
+		navigation();
+	});
+		
+	$('.nav .left').click(function() {
+		act_img--;
+		navigation();
+	});
+	
+	
+	//Rendering Positions
+	function render(){
+		var window_width = $(window).width();
+		var window_height = $(window).height();
+		
+		$('.switch_box').css({ width: window_width+'px', height: window_height+'px' });
+		
+		//Position the Images
+		$('.switch_box').each(function(index) {
+			if($(this).attr("data-posx")!=undefined && $(this).attr("data-posy")!=undefined){
+				var posY = ( ($(this).attr("data-posy")-1) * window_height );
+				var posX = ( ($(this).attr("data-posx")-1) * window_width );
+				
+				$(this).css("top", posY);
+				$(this).css("left", posX);
+			}
+		});
+		
+		//calc new positions on resize
+		navigation();
+	}
+	
+	$(window).resize(function(){
+		window.clearTimeout(resizer_timeout);
+		resizer_timeout = window.setTimeout("render()",200);
+	});
+	render();
+	</script>
+</body>
+</html>
