@@ -2,9 +2,11 @@
 
 A small rudimentary layred slideshow. Just a inspiration ;)
 
+### Demo
+http://devert.net/_dev/LayeredSlideshow/
 
-### Info / Docs
-Here: http://devert.net/inspiration/layeredslideshow
+### Info
+http://devert.net/inspiration/layeredslideshow
 
 Tested with Chrome 39 @ Mac OSX 10.9.5
 
